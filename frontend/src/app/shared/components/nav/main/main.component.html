@@ -1,0 +1,8 @@
+<nav
+  class="flex items-center justify-between h-14 top-0 px-5 bg-gray-600"
+  appScrollToggleTopDown
+  *ngIf="authService.isLogin | async"
+>
+  <a href="#" class="btn__primary w-52">FORWARDS</a>
+  <button (click)="logout()" class="btn__primary" style="background-color: red">Cerrar sesión</button>
+</nav>

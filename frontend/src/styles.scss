@@ -1,0 +1,25 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./app/domain/domain.styles";
+/* You can add global styles to this file, and also import other style files */
+
+@layer base {
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Poppins", sans-serif;
+    @apply text-blue-900 font-bold tracking-wider;
+  }
+}
+
+.badge {
+  @apply flex items-center bg-yellow-600 rounded-md shadow-lg cursor-pointer text-white text-xs uppercase m-1 p-1;
+}
